@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment</title>
+</head>
+
+<body onload="init()">
+    <h1>Experiment</h1>
+
+    <section class="instructions">
+        <h3>
+        </h3>
+        <p class="txt">
+            In this task, you play a "social" game. you need to choose one of 4 decks
+            (A, B, C or D) with the mouse.
+            <br>
+            <br>
+            Selecting each agent will show his or her emotional response to you. Your task is to select the agent with
+            the best (most positive) emotional.
+            <br>
+            <br>
+            Notice that when you select an agent there are two emotional responses: One and then another. Both of these
+            count towards the agent’s response to you (they have the same weight).
+            <br>
+            <br>
+            It is not possible to know in advance what would be the agents’ emotional response to you. You will find
+            this out during the game.
+            <br>
+            <br>
+            You are completely free to switch from one agent to the other in whatever frequency you want.
+            <br>
+            <br>
+            At the end of the game you will get money based on the positivity/negativity of the agent’s emotions as
+            ranked by a previous panel. For example, lets say that an agent was recorded at a positivity/negativity
+            level of 2.5 (on a scale of 0 to 5) this mean you will get 2.5 cents for each round you select the agent.
+            <br>
+            <br>
+            You do not know the number of rounds in advance.
+            <br>
+            <br>
+            Finally, please notice that they computer does not change the order of the agents once the game starts or
+            changes outcomes because of choices you made.
+            <br>
+            <br>
+            Press space bar to start. Good luck!
+            <br>
+
+        </p>
+
+        <button onclick="startEx()">Start experiment</button>
+    </section>
+
+    <section class="decks-container"></section>
+
+    <section class="survey-container">
+        <div class="btns">
+            <label>Negative</label>
+            <div>
+                <input onclick="surveyClicked(1)" type="radio" id="1" name="score">
+                <label for="1">1</label>
+            </div>
+            <div>
+                <input onclick="surveyClicked(2)" type="radio" id="2" name="score">
+                <label for="2">2</label>
+            </div>
+            <div>
+                <input onclick="surveyClicked(3)" type="radio" id="3" name="score">
+                <label for="3">3</label>
+            </div>
+            <div>
+                <input onclick="surveyClicked(4)" type="radio" id="4" name="score">
+                <label for="4">4</label>
+            </div>
+            <div>
+                <input onclick="surveyClicked(5)" type="radio" id="5" name="score">
+                <label for="5">5</label>
+            </div>
+            <label>Positive</label>
+        </div>
+        <div class="survey-img-container">
+            <img class="survey-img">
+        </div>
+    </section>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

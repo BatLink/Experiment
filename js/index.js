@@ -8,7 +8,7 @@ let gImgIdx = 0;
 const switchtingOrder = [];
 
 // this is the limit to the total length - meaning that in the real thing it will be set to 100. for testing I can use 5
-const LIMIT = 100;
+const LIMIT = 4;
 
 function init() {
     gPlayingDecks = goodDecks.slice(0, 2).concat(badDecks.slice(0, 2));
@@ -234,7 +234,7 @@ function renderImg(deck) {
 }
 
 function checkSwap() {
-    if (gClicks === 50) {
+    if (gClicks === 2) {
         swapDecks();
         showInstructions();
 

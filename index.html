@@ -11,6 +11,9 @@
 
 <body onload="init()">
     <h1>Experiment</h1>
+    <section class="end-message-container">
+        <p>Thank you for participating</p>
+    </section>
 
     <section class="instructions">
         <h3>
@@ -21,7 +24,7 @@
             <br>
             <br>
             Selecting each agent will show his or her emotional response to you. Your task is to select the agent with
-            the best (most positive) emotional.
+            the most positive emotions (most kind and pleasant).
             <br>
             <br>
             Notice that when you select an agent there are two emotional responses: One and then another. Both of these
@@ -37,7 +40,7 @@
             <br>
             At the end of the game you will get money based on the positivity/negativity of the agent’s emotions as
             ranked by a previous panel. For example, lets say that an agent was recorded at a positivity/negativity
-            level of 2.5 (on a scale of 0 to 5) this mean you will get 2.5 cents for each round you select the agent.
+            level of 2.5 (on a scale of 1 to 5) this mean you will get 2.5 cents for each round you select the agent.
             <br>
             <br>
             You do not know the number of rounds in advance.
@@ -58,33 +61,8 @@
     <section class="decks-container"></section>
 
     <section class="survey-container">
-        <div class="btns">
-            <label>Negative</label>
-            <div>
-                <input onclick="surveyClicked(1)" type="radio" id="1" name="score">
-                <label for="1">1</label>
-            </div>
-            <div>
-                <input onclick="surveyClicked(2)" type="radio" id="2" name="score">
-                <label for="2">2</label>
-            </div>
-            <div>
-                <input onclick="surveyClicked(3)" type="radio" id="3" name="score">
-                <label for="3">3</label>
-            </div>
-            <div>
-                <input onclick="surveyClicked(4)" type="radio" id="4" name="score">
-                <label for="4">4</label>
-            </div>
-            <div>
-                <input onclick="surveyClicked(5)" type="radio" id="5" name="score">
-                <label for="5">5</label>
-            </div>
-            <label>Positive</label>
-        </div>
-        <div class="survey-img-container">
-            <img class="survey-img">
-        </div>
+        <p class="survey-txt">Which emotion is more positive?</p>
+        <div class="imgs-container"></div>
     </section>
 
     <script src="js/index.js"></script>

@@ -5,6 +5,10 @@
     margin: 0 auto;
 }
 
+.end-message-container{
+    visibility: hidden;
+}
+
 .decks-container>div {
     margin: 0 20px;
 }
@@ -22,11 +26,13 @@
     visibility: hidden;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 
 .survey-img {
     width: 300px;
+    margin: 0 10px;
 }
 
 .deck-container {
@@ -59,34 +65,6 @@ img[src=null] {
     font-size: 3rem;
     font-family: 'Times New Roman';
 }
-
-/* .txt {
-    font-family: Arial;
-    font-size: 1rem;
-}
-.card-img {
-    width: 200px;
-    height: 250px;
-    margin-bottom: 20px;
-    border: 1px solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    border-radius: 1rem;
-}
-.deck .card-img {
-    width: 200px;
-    height: 250px;
-    margin-bottom: 20px;
-    border: 1px solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    border-radius: 1rem;
-
-}  */
 
 .txt {
     font-family: 'Times New Roman';

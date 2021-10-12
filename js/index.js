@@ -250,8 +250,9 @@ function showFinalInstructions() {
     document.querySelector('.decks-container').style.visibility = 'hidden';
     const elTxtContainer = document.querySelector('.instructions');
     const elTxt = document.querySelector('.txt');
-    elTxt.innerText = ` based on your choices you earned  ${gScore} cents.
-    Pleas rate the following emotions from 1 (negative) to 5(positive)`;
+    elTxt.innerText = ` based on your choices you earned  ${gScore.toFixed(1)} cents. 
+    In the next task you will make a series of selections between two faces. You will need to select the face with the emotion that is more positive (more kind and pleasant). 
+    One of the rounds will be selected at random and you will receive a bonus payoff based on your choice on that round.`;
 
 
     elTxtContainer.hidden = false;
